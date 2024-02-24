@@ -86,7 +86,7 @@ function MenuComponent({ menus }: PropsMenu) {
   );
 }
 
-export function ComponentApp(): ReactElement {
+export function ComponentApp(): JSX.Element {
   const menus: Menu[] = [
     {
       id: "first",

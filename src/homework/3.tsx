@@ -1,6 +1,6 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { ChangeEvent, FC, useState } from 'react';
 
-export const FormComponent:React.FC=()=> {
+export const FormComponent:FC=()=> {
   const [value, setValue] = useState<string>("");
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {

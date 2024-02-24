@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { FC, useReducer } from "react";
 
 interface State {
   isRequestInProgress: boolean;
@@ -32,7 +32,7 @@ function requestReducer(state: State, action: Action): State {
   }
 }
 
-export const RequestComponent: React.FC=()=> {
+export const RequestComponent: FC=()=> {
   const [requestState, requestDispatch] = useReducer(
     requestReducer,
     initialState
